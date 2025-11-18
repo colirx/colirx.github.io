@@ -54,6 +54,13 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
+# MathJax 数学公式支持
+mathjax:
+  #是否启用
+  on: true 
+  # 若只渲染单个页面，此选项设为false，页面内加入 mathjax: true
+  per_page: false
+  engine: mathjax
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
