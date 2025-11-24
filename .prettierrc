@@ -1,0 +1,14 @@
+{
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "tabWidth": 4,
+        "useTabs": false,
+        "proseWrap": "preserve",
+        "singleQuote": true,
+        "trailingComma": "none"
+      }
+    }
+  ]
+}
