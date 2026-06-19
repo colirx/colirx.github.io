@@ -13,20 +13,7 @@ dist-ssr
 *.local
 
 
-docs/.vitepress/cache/deps/_metadata.json
-docs/.vitepress/cache/deps/@theme_index.js
-docs/.vitepress/cache/deps/@theme_index.js.map
-docs/.vitepress/cache/deps/chunk-KNUCHIUH.js
-docs/.vitepress/cache/deps/chunk-KNUCHIUH.js.map
-docs/.vitepress/cache/deps/chunk-URVHZSMY.js
-docs/.vitepress/cache/deps/chunk-URVHZSMY.js.map
-docs/.vitepress/cache/deps/package.json
-docs/.vitepress/cache/deps/vitepress___@vue_devtools-api.js
-docs/.vitepress/cache/deps/vitepress___@vue_devtools-api.js.map
-docs/.vitepress/cache/deps/vitepress___@vueuse_core.js
-docs/.vitepress/cache/deps/vitepress___@vueuse_core.js.map
-docs/.vitepress/cache/deps/vue.js
-docs/.vitepress/cache/deps/vue.js.map
+docs/.vitepress/cache/*
 
 # Editor directories and files
 .vscode/*
