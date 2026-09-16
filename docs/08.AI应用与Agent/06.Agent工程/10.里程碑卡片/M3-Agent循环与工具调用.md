@@ -41,6 +41,10 @@ title: M3 Agent 循环与工具调用
 
 ## 外部资源（限 1 个）
 
+**直接打开**：
+- [Agent 全栈进阶｜工具调用与结构化输出](https://developer.aliyun.com/article/1756661)
+- [LangChain4j 护栏（Guardrails）中文文档](https://docs.langchain4j.info/tutorials/guardrails)
+
 - ReAct 论文——**用在任务 1**。
   解决的问题：给你一个经过验证的循环骨架（推理与行动交替）作为对标的参照，
   让你手写时不至于退化成"让模型自己想办法"的模糊实现。
