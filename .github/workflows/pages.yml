@@ -18,7 +18,7 @@ jobs:
           cache: 'npm' 
 
       - name: Install Dependencies
-        run: npm install 
+        run: npm ci 
 
       - name: Build VitePress Site
         # 这会生成 .vitepress/dist 目录
