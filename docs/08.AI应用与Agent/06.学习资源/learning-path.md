@@ -49,7 +49,9 @@ title: 学习路径
 
 | 资源 | 平台/UP主 | 链接 | 时长 | 难度 | 核实状态 |
 |---|---|---|---|---|---|
-| 【官方双语/合集】线性代数的本质（16 集） | B站 / **3Blue1Brown 官方账号** | https://www.bilibili.com/video/BV1ys411472E | 约 172 分钟 | 入门 | ✅ 已核实（**只看点积直接跳 P10**：`?p=10`；打不开时的[备选版](https://www.bilibili.com/video/BV1cYM86rEew)已确认可播） |
+| **线性代数的本质（中文配音，15 集）** | B站 / 婆婆町 | https://www.bilibili.com/video/BV1ib411t7YR | 约 161 分钟 | 入门 | ✅ 推荐（**点积跳 P10**：`?p=10`） |
+| 线性代数的本质（官方双语合集，16 集） | B站 / 3Blue1Brown 官方账号 | https://www.bilibili.com/video/BV1ys411472E | 约 172 分钟 | 入门 | ⚠️ 部分账号/环境打不开（API 正常但页面显示「视频不见了」），打不开就换上一行的中文配音版 |
+| 点积与对偶性（官方单集） | B站 / 3Blue1Brown 官方账号 | https://www.bilibili.com/video/BV13s411t7fe | 14 分钟 | 入门 | ✅ 只需要看点积时用这个，不必开合集 |
 | 可汗学院：线性代数（143 集） | 网易公开课 / 可汗学院 | https://open.163.com/newview/movie/courseintro?newurl=PEV1IVQNC | 约 20h（估算） | 入门偏细 | ✅ 已核实 |
 | MIT 18.06 Gilbert Strang（36 集，中文字幕） | B站 / 搬运号 | https://www.bilibili.com/video/BV183Tg6cEEn | 约 28h | 中高，含大量证明 | ✅ 已核实（搬运） |
 
