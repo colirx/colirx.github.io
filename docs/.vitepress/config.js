@@ -20,7 +20,7 @@ const vitepressConfig = {
   },
 };
 
-export default withSidebar(vitepressConfig, {
+const config = withSidebar(vitepressConfig, {
   base: "/colirx.github.io/",
   documentRootPath: "/docs",
   pathRewrite: {
@@ -46,3 +46,72 @@ export default withSidebar(vitepressConfig, {
   collapsed: true, // 是否默认折叠
   // debugPrint: true // 开发时打印日志
 });
+
+// “数仓与 AI 数据底座”章节单独编排：明确编号 + 分组，避免平铺后看不出顺序。
+const bigDataGroup = config.themeConfig.sidebar.find(
+  (group) => group.text === "06.大数据",
+);
+const dataPlatformChapter = bigDataGroup?.items?.find((item) =>
+  item.text?.includes("13."),
+);
+
+if (dataPlatformChapter) {
+  const prefix = "/06.大数据/13.数仓与AI数据底座";
+  dataPlatformChapter.items = [
+    { text: "01. 导读", link: `${prefix}/00.导读` },
+    { text: "02. 架构总览", link: `${prefix}/01.架构总览` },
+    {
+      text: "03. 选型决策",
+      collapsed: false,
+      items: [
+        { text: "3.1 基础资源", link: `${prefix}/02.选型决策/01.基础资源` },
+        {
+          text: "3.2 存储与表格式",
+          link: `${prefix}/02.选型决策/02.存储与表格式`,
+        },
+        {
+          text: "3.3 计算与接入",
+          link: `${prefix}/02.选型决策/03.计算与接入`,
+        },
+        {
+          text: "3.4 查询与治理",
+          link: `${prefix}/02.选型决策/04.查询与治理`,
+        },
+      ],
+    },
+    {
+      text: "04. 部署实施",
+      collapsed: false,
+      items: [
+        {
+          text: "4.1 资源规划与采购",
+          link: `${prefix}/03.部署实施/01.资源规划与采购`,
+        },
+        {
+          text: "4.2 部署顺序与验收",
+          link: `${prefix}/03.部署实施/02.部署顺序与验收`,
+        },
+        {
+          text: "4.3 高可用与容灾",
+          link: `${prefix}/03.部署实施/03.高可用与容灾`,
+        },
+        {
+          text: "4.4 多节点集群与低成本重建",
+          link: `${prefix}/03.部署实施/04.多节点集群与低成本重建`,
+        },
+      ],
+    },
+    {
+      text: "05. 实战与验收",
+      collapsed: false,
+      items: [
+        { text: "5.1 实战记录", link: `${prefix}/04.实战记录` },
+        { text: "5.2 待办与风险", link: `${prefix}/05.待办与风险` },
+        { text: "5.3 验收截图", link: `${prefix}/06.验收截图` },
+        { text: "5.4 验收报告", link: `${prefix}/07.验收报告` },
+      ],
+    },
+  ];
+}
+
+export default config;
