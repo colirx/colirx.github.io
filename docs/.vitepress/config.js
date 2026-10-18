@@ -105,10 +105,43 @@ if (dataPlatformChapter) {
       text: "05. 实战与验收",
       collapsed: false,
       items: [
-        { text: "5.1 实战记录", link: `${prefix}/04.实战记录` },
-        { text: "5.2 待办与风险", link: `${prefix}/05.待办与风险` },
-        { text: "5.3 验收截图", link: `${prefix}/06.验收截图` },
-        { text: "5.4 验收报告", link: `${prefix}/07.验收报告` },
+        {
+          text: "5.1 实战教程",
+          collapsed: false,
+          items: [
+            {
+              text: "5.1.0 总览与准备",
+              link: `${prefix}/04.实战教程/00.总览与准备`,
+            },
+            {
+              text: "5.1.1 节点与 Kubernetes",
+              link: `${prefix}/04.实战教程/01.节点与Kubernetes`,
+            },
+            {
+              text: "5.1.2 存储与元数据",
+              link: `${prefix}/04.实战教程/02.存储与元数据`,
+            },
+            {
+              text: "5.1.3 消息与实时",
+              link: `${prefix}/04.实战教程/03.消息与实时`,
+            },
+            {
+              text: "5.1.4 查询与调度",
+              link: `${prefix}/04.实战教程/04.查询与调度`,
+            },
+            {
+              text: "5.1.5 Spark 与端到端",
+              link: `${prefix}/04.实战教程/05.Spark与端到端`,
+            },
+            {
+              text: "5.1.6 排障与清理",
+              link: `${prefix}/04.实战教程/06.排障与清理`,
+            },
+          ],
+        },
+        { text: "5.2 边界与风险", link: `${prefix}/05.待办与风险` },
+        { text: "5.3 验收证据", link: `${prefix}/06.验收截图` },
+        { text: "5.4 测试结果", link: `${prefix}/07.验收报告` },
       ],
     },
   ];
